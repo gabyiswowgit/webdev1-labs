@@ -1,0 +1,33 @@
+p, blockquote {
+    color: navy;
+}
+
+h1, h2 {
+    color: white;
+    background-color: #0000ff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    font-weight: bold;
+}
+
+a:link, a:visited {
+    color: navy;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:white;
+    background-color: navy;
+}
+
+a:active {
+    color: orange;
+    background-color: navy;
+}
+
