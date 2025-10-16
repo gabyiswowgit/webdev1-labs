@@ -1,33 +1,103 @@
-p, blockquote {
-    color: navy;
+body, html{
+    margin: 0  ;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
-h1, h2 {
+body{
+    font-family: Verdana, Helvetica, Arial, Helvetica, sans-serif;
+    background-color: #e2edff;
+    line-height: 125%;
+}
+
+header{
+    margin: 0;
+    padding: 0 !important;
+    background-color: navy;
+}
+
+h1{
+    font-size: x-large;
     color: white;
-    background-color: #0000ff;
+    padding-top: 2em;
+    padding-bottom: .2em;
+    padding-left: .4em;
+    margin: 0;
+}
+
+h2 {
+    padding-top: .5em;
+    color: navy;
+    font-size: 130%;
+    font-weight: normal;
+}
+
+h1, h2, h3 {
+    font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+}
+
+p {
+    color: navy;
 }
 
 ul {
     list-style-type: none;
 }
 
-a {
+nav ul {
     font-weight: bold;
 }
 
-a:link, a:visited {
-    color: navy;
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    padding: 10px 20px;
+    text-align: center;
+    display:inline-block;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+nav ul li a:link, nav ul li a:visited {
+    background-color: dodgerblue;
+    color: white;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-    color:white;
-    background-color: navy;
+nav ul li a:hover, nav ul li a:active {
+    background-color: lightskyblue;
 }
 
-a:active {
-    color: orange;
-    background-color: navy;
+p a:link, a:visited {
+    color: blue;
 }
 
+p a:hover{
+    text-decoration: none;
+}
+
+#tagline {
+    background: #bed8f3;
+    font-style: italic;
+    font-family: Georgia, Times, serif;
+    border-top: 3px solid #7da5d8;
+    border-bottom: 3px solid #7da5d8;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    padding-left: .8em;
+    margin: 0;
+}
+
+.fun {
+    color: #339999;
+    font-family: Georgia, Times, serif;
+    letter-spacing: 0.05em;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+}

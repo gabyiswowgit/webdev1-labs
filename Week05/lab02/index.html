@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Descendant Selectors</title>
+  <style>
+  blockquote {
+      font-size:18px;
+  }
+
+  blockquote strong {
+    text-transform: capitalize;
+  }
+
+  blockquote > em {
+    color: red;
+  }
+
+  blockquote strong em{
+    text-decoration: overline underline;
+  }
+
+  </style>
+</head>
+<body>
+<h2>Some Quotations</h2>
+<blockquote><strong>An apple a day keeps the doctor away</strong></blockquote>
+<blockquote><em>To err is human to forgive divine</em></blockquote>
+<blockquote><strong>Early to bed, <em>early</em> to rise</strong></blockquote>
+</body></html>
