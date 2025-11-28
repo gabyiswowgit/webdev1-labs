@@ -1,0 +1,37 @@
+html,body {
+  width:100%;
+  height:100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.ui.container {
+  margin-top:3%; // Add a top margin to the container.
+}
+
+.ui.table > thead > tr > th {
+  cursor: auto;
+  background: rgb(158, 76, 76);
+  text-align: inherit;
+  color: rgb(255, 255, 255);
+  padding: 0.92857143em 0.78571429em;
+  vertical-align: inherit;
+  font-style: none;
+  font-weight: bold;
+  text-transform: none;
+  border-bottom: 1px solid rgba(34, 36, 38, 0.1);
+  border-left: none;
+}
+
+
+.ui.striped.table > tr:nth-child(2n),
+.ui.striped.table > tbody > tr:nth-child(2n) {
+  background-color: rgba(158, 76, 76, 0.3);
+}
+
+.ui.ui.selectable.table > tbody > tr:hover,
+.ui.table tbody tr td.selectable:hover {
+  background: rgba(158, 76, 76, 0.5)!important;
+  color: rgba(0, 0, 0, 0.95);
+}

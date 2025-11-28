@@ -1,0 +1,53 @@
+html,body {
+  width:100%;
+  height:100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size:16px;
+}
+
+.ui.container {
+  margin-top:2em;
+}
+
+.ui.tabular.menu {
+  border-radius: 0;
+  box-shadow: none !important;
+  border: none;
+  background: none transparent;
+  border-bottom: 1px solid red;
+}
+
+.ui.tabular.menu .item {
+  background: transparent;
+  border-bottom: none;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 2px solid transparent;
+  padding: 0.92857143em 1.42857143em;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+.ui.tabular.menu .item:hover {
+  background-color: pink;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 0;
+}
+
+.ui.tabular.menu .active.item {
+  background: none rgb(255, 2, 2);
+  color: rgba(255, 254, 254, 0.95);
+  border-top-width: 1px;
+  border-color: #f00606;
+  font-weight: bold;
+  margin-bottom: -1px;
+  box-shadow: none;
+  border-radius: 0.28571429rem 0.28571429rem 0 0 !important;
+}
+
