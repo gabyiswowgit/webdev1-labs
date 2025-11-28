@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Car Booking</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>Book a Car</h1>
+    </header>
+    <main>
+      <section id="form">
+        <h2>Contact Us</h2>
+
+        <form action="process.html" method="get" id="booking">
+          <div class="form-row">
+            <label for="contactname">Name</label>
+            <input type="text" name="contactname" id="contactname" required pattern="[A-Z][a-z]+( [A-Z][a-z]+)?"
+              autofocus title="Please enter your first name (surname optional) with first letter capitalised">
+
+          </div>
+
+          <div class="form-row">
+            <label for="emailaddress"> Email Address</label>
+            <input type="email" name="emailaddress" id="emailaddress" 
+            required pattern="[a-z0-9._%+=]+@[a-z0-9.-]+.[a-z]{2,}$" title="Please enter a vlid email address">
+          </div>
+
+
+          <fieldset>
+            <legend> Do you have a Driver's License? </legend>
+            <label> <input type="radio" name="driverlicense" id="answer" value="Yes"> Yes </label>
+
+            <label> <input type="radio" name="driverlicense" id="answer" value="No"> No </label>
+          </fieldset>
+
+          <div class="form-row">
+            <label> Age <input type="number" name="age" id="age" min="17" max="80" required 
+              title="Please enter an age within the range of 17-80"> </label>
+          </div>
+
+
+          <div class="form-row">
+            <label> Booking Date <input type="date" name="bookingdate" id="date" required
+              title="Please enter a valid date"> </label>
+          </div>
+
+          <div class="form-row"> Car Selection
+
+            <select name="cars">
+              <option value="Ford"> Ford Focus </option>
+              <option value="Hyundai"> Hyundai Tucson </option>
+              <option value="Toyota"> Toyota Rav4 </option>
+              <option value="Renault"> Renault Kadjar </option>
+              <option value="Nissan"> Nissan Qashqai </option>
+            </select>
+          
+          </div>
+
+          <h3> Please provide any other details you think will be useful to us in the text are below
+            (it may save us calling ot emailing you,and helpavoid delays)
+          </h3>
+
+          <textarea name="feedback" rows="10" cols="50"> Please leave us feedback. Thank you!</textarea>
+
+          <hr>
+          <button type="submit"> Submit </button>
+
+          <button type="reset"> Reset</button>
+
+        </form>
+
+
+      </section>
+      <section id="image">
+        <figure>
+          <img src="images/car.jfif" alt="Car" class="ui fluid image">
+          <figcaption>Car Rental</figcaption>
+        </figure>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

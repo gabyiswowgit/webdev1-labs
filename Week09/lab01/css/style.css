@@ -1,0 +1,78 @@
+#container {
+  border: solid black 1px;
+  margin-top: 2em;
+  width: 90%;
+  margin: auto;
+  padding: 1em;
+}
+
+.form-row {
+  display: flex;
+}
+
+.form-row > label,
+legend {
+  flex: 0 1 20%;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+form input,
+form select {
+  flex: 1;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.check > label {
+  display: block;
+}
+
+fieldset {
+  border: none;
+}
+legend {
+  margin-left: -1em;
+}
+
+form button {
+  padding: 1em;
+  background: gray;
+  color: white;
+  border: 0;
+  margin-top: 1em;
+}
+
+figcaption {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+form#booking input[type="text"]:valid,
+form#booking input[type="date"]:valid,
+form#booking input[type="email"]:valid,
+form#booking input[type="number"]:valid {
+  color: green;
+}
+
+/* Unmatched */
+form#booking input[type="text"]:invalid,
+form#booking input[type="date"]:invalid,
+form#booking input[type="email"]:invalid,
+form#booking input[type="number"]:invalid {
+  color: red;
+  border-color: red;
+}
+
+main {
+  display: flex;
+}
+
+section#form {
+  flex: 80%;
+}
+
+section#image {
+  flex: 20%;
+}
